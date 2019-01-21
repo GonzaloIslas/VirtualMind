@@ -1,0 +1,18 @@
+-Open a Command Prompt (CDM for windows will do)
+
+-type "cd thePathToTheProject/PruebaTrabajo"
+
+-type nodemon
+
+-open a browser and put this in the URL box "http://localhost:3001"
+
+-All api End Points are
+/signup
+/modifyUser
+/DeleteUser
+/Dolar
+/Pesos
+/Real
+
+
+This was made with Node.js, express and mogoose (MongoDB).
