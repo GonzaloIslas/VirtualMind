@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Modify User</title>
+	<!-- <link rel="stylesheet" href="/asset/css/include.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<div>
+	<div class="container d-flex justify-content-center" style="padding: 40px">
+		<div class="card text-center" style="width: 750px;">
+			<div class="card-body" style="padding: 2.25rem !important">
+				<br>
+				<h5 class="card-title">Modify User</h5>
+				<br>
+				<br>
+				<form action="/users/modifyuser" method="post">
+					<!-- Nombre y Apellido del nuevo usuario -->
+					<div class="row p-2">
+						<div class="col-6">
+							<div class="form-group">
+								<input name="firstname_user" type="text" class="form-control" placeholder="Fist name">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+								<input name="lastname_user" type="text" class="form-control" placeholder="Last Name">
+							</div>
+						</div>
+					</div>
+					<!-- Direccion de correo electronico o nombre de usuario -->
+					<div class="row p-2">
+						<div class="col-12 text-left">
+							<div class="form-group">
+								<input name="email_user" type="text" class="form-control" placeholder="Email address">
+							</div>
+						</div>
+					</div>
+					<!-- Contraseña y confirmacion de contraseña -->
+					<div class="row p-2">
+						<div class="col-6 text-left">
+							<div class="form-group">
+								<input name="password_user" type="password" class="form-control" placeholder="Password">
+								<small class="text-muted"></small>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+								<input id="password_user_verification" type="password" class="form-control" placeholder="Confirm Password">
+							</div>
+						</div>
+					</div>
+
+					<div class="row p-2">
+  						<div class="col-md-4 text-left">
+							<a href="/login" style="font-weight: 500;" class="card-link">Log In</a>
+  						</div>
+  						<div class="col-md-4 ml-auto">
+							<button type="submit" id="btn_create_account" class="btn btn-primary btn-block btn-raised" ">Modify Account</button>
+  						</div>					
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- jquery -->
+	<script src="asset/vendor/jquery/3.2.1/jquery-3.2.1.js"></script>
+
+	<script src="asset/js/controller.js"></script>
+	<script src="asset/js/usuario.js"></script>
+</body>
+</html>
