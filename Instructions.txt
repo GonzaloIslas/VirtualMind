@@ -2,17 +2,19 @@
 
 -type "cd thePathToTheProject/VirtualMind-Master"
 
--type nodemon
+-type npm start bin/www
 
 -open a browser and put this in the URL box "http://localhost:3001"
 
--All api End Points are
-/signup
-/modifyUser
-/DeleteUser
-/Dolar
-/Pesos
-/Real
+-Last Step is to contact me so i can WhiteList the ip of the pc that will be running the node Application since it needs to comunicate with mongoDB.Atlas (DB server)
+
+-All api End Points are (the code is found in the routes folder)
+/users/signup   (GET request to have a raw ui, POST request to create a user)
+/users/modifyUser (GET request to have a raw ui, POST request to Modify a user's first name and last name)
+/users/DeleteUser (GET request to have a raw ui, POST request to Delete a user)
+/Dolar (Just GET Method)
+/Pesos (You get a 501)
+/Real  (You get a 501)
 
 
 This was made with Node.js, express and mogoose (MongoDB).
